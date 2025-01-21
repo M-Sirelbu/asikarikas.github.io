@@ -3,6 +3,14 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
+}
+.header-parent-inactive {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .header-child {
     flex: auto;
@@ -16,7 +24,7 @@ html {
     color: white;
 }
 
-button.active {
+.active {
     background-color: #007eff;
     color: black;
     flex: auto;
@@ -30,7 +38,7 @@ button.active {
     font-variant: normal;
     cursor: pointer;
 }
-button.inactive {
+.inactive {
     background-color: black;
     color: #007eff;
     flex: auto;
@@ -43,9 +51,78 @@ button.inactive {
     font-variant: normal;
     cursor: pointer;
 }
-div.main-parent {
+.main-parent {
     display: flex;
 }
-div.main-child {
+.main-parent-inactive {
+    display: flex;
+}
+.main-child {
     flex: 1;
+}
+.active-icon {
+    display: none;
+}
+.inactive-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header-parent {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: left;
+    }
+    .header-parent-inactive {
+        display: none;
+    }
+    .active {
+        border-radius: 0;
+        display: flex;
+        justify-content: left;
+        margin: 0px 0px 0px 0px
+    }
+    .inactive {
+        color: white;
+        display: flex;
+        justify-content: left;
+        margin: 0px 0px 0px 0px
+        }
+    .active-icon {
+        padding: 0px 20px 0px 20px;
+        display: inline;
+    }    
+    .inactive-icon {
+        padding: 0px 20px 0px 20px;
+        filter: invert(100%);
+        rotate: 90deg;
+        display: inline;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: end;
+    }
+    .mobile-menu-button-inactive {
+        background-color: #007eff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .mobile-menu-button-active {
+        background-color: black;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .main-parent-inactive {
+        display: none;
+    }
+
 }

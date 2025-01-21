@@ -4,25 +4,32 @@
     <title>ASI Karikas</title>
     <link rel="stylesheet" type="text/css" href="code/css/asi.css"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-parent">
-            <button class="inactive" id="b1" onclick="buttonClick(this.id);">Mis on ASI Karikas?</button>
-            <button class="inactive" id="b2" onclick="buttonClick(this.id)">Miks osaleda?</button>
-            <button class="inactive" id="b3" onclick="buttonClick(this.id)">Koduvoor</button>
-            <button class="inactive" id="b4" onclick="buttonClick(this.id)">Lõppvoor</button>
-            <button class="inactive" id="b5" onclick="buttonClick(this.id)">Kontakt</button>
-            <button class="inactive" id="b6" onclick="buttonClick(this.id)">Arhiiv</button>
-            <button class="inactive" id="b7" onclick="buttonClick(this.id)">Toetajad</button>
+        <div class="mobile-menu">
+            <button id="mobile-menu-button" class="mobile-menu-button-inactive" onclick="mobileMenuButtonClick(this.id)">
+                <img src="assets/icon/menu-open.svg" class="mobile-menu-open-icon">
+                <img src="assets/icon/menu-close.svg" class="mobile-menu-close-icon" hidden="">
+            </button>
+        </div>
+        <div class="header-parent-inactive" id="header-view">
+            <button class="active" id="b1" onclick="buttonClick(this.id);"><img src="assets/icon/arrow.svg" class="active-icon">Mis on ASI Karikas?</button>
+            <button class="inactive" id="b2" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Miks osaleda?</button>
+            <button class="inactive" id="b3" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Koduvoor</button>
+            <button class="inactive" id="b4" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Lõppvoor</button>
+            <button class="inactive" id="b5" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Kontakt</button>
+            <button class="inactive" id="b6" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Arhiiv</button>
+            <button class="inactive" id="b7" onclick="buttonClick(this.id)"><img src="assets/icon/arrow.svg" class="inactive-icon">Toetajad</button>
         </div>
     </header>
     <main>
-        <div class="main-parent">
-            <div id="b1-view" class="main-child" hidden="">
+        <div class="main-parent" id="main-view">
+            <div id="b1-view" class="main-child">
                 ASI Karikas
             </div>
             <div id="b2-view" class="main-child" hidden="">
