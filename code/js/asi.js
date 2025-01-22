@@ -10,6 +10,13 @@ function buttonClick(id) {
 
         document.getElementById(active_id+"-view").hidden = true;
         document.getElementById(id+"-view").hidden = false;
+
+        document.getElementById("mobile-menu-open-icon").hidden = false;
+        document.getElementById("mobile-menu-close-icon").hidden = true;
+        document.getElementById("mobile-menu-button").className = "mobile-menu-button-inactive";
+        document.getElementById("header-view").className = "header-parent-inactive";
+        document.getElementById("main-view").className = "main-parent";
+
         active_id = id;
     }
 }
