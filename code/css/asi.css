@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "PixelifySans";
+    src: url('assets/fonts/PixelifySans-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PixelifySans";
+    src: url('assets/fonts/PixelifySans-Bold.ttf');
+    font-weight: bold;
+}
+
 .header-parent {
     display: flex;
     align-items: center;
@@ -23,7 +34,35 @@ html {
     background-color: black;
     color: white;
 }
+h1 {
+    font-family: "Lato", serif;
+    color: #007eff;
+    font-size: 32px
+}
+h2 {
+    font-family: "Lato", serif;
+    color: #f0941d;
+    font-size: 24px
+}
+p, li {
+    font-family: "Lato", serif;
+    color: #fafafa;
+    font-size: 24px;
+}
+a {
+    font-family: "Lato", serif;
+    color: #f0941d;
+}
+.loe_rohkem_container {
+    display: flex;
+    justify-content: center;
+}
+.loe_rohkem {
+    font-family: "Lato", serif;
+    color: #007eff;
+    font-size: 24px;
 
+}
 .active {
     background-color: #007eff;
     color: black;
@@ -51,6 +90,13 @@ html {
     font-variant: normal;
     cursor: pointer;
 }
+.elevator_pitch {
+    font-family: "PixelifySans", sans-serif;
+    font-size: 32px;
+    color: #007eff;
+    text-align: center;
+}
+
 .main-parent {
     display: flex;
 }
@@ -59,6 +105,7 @@ html {
 }
 .main-child {
     flex: 1;
+    padding: 100px;
 }
 .active-icon {
     display: none;
