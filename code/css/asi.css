@@ -1,15 +1,6 @@
-@font-face {
-    font-family: "PixelifySans";
-    src: url('assets/fonts/PixelifySans-Regular.ttf');
-    font-weight: normal;
-}
-@font-face {
-    font-family: "PixelifySans";
-    src: url('assets/fonts/PixelifySans-Bold.ttf');
-    font-weight: bold;
-}
-
 .header-parent {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,7 +19,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
 }
 html {
     background-color: black;
@@ -37,31 +27,91 @@ html {
 h1 {
     font-family: "Lato", serif;
     color: #007eff;
-    font-size: 32px
+    font-size: 32px;
+    font-weight: 900;
 }
 h2 {
     font-family: "Lato", serif;
     color: #f0941d;
-    font-size: 24px
+    font-size: 24px;
+    font-weight: 900;
+    margin: 50px 0px;
 }
 p, li {
     font-family: "Lato", serif;
     color: #fafafa;
     font-size: 24px;
+    text-align: justify;
+    line-height: 1.5;
+}
+li {
+    padding: 6px 0px;
 }
 a {
     font-family: "Lato", serif;
     color: #f0941d;
 }
-.loe_rohkem_container {
-    display: flex;
-    justify-content: center;
+.archive-link {
+    color: white;
 }
-.loe_rohkem {
+.bold-900 {
+    font-weight: 900;
+}
+.underline {
+    text-decoration-line: underline;
+}
+.loe-rohkem-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+
+}
+.loe-rohkem-icon {
+    padding-right: 6%;
+    display: inline;
+    height: 48px;
+}
+.loe-rohkem {
     font-family: "Lato", serif;
     color: #007eff;
     font-size: 24px;
-
+    font-weight: 900;
+    white-space: nowrap;
+}
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.horizontal-content-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.vertical-content-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.asikarikas-logo {
+    max-width: 33%;
+}
+.lapikud-logo {
+    width: 25%;
+    height: auto;
+    flex-shrink: 0;
+}
+.asikarikas-logo-year {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0;
+    text-align: center;
 }
 .active {
     background-color: #007eff;
@@ -92,9 +142,13 @@ a {
 }
 .elevator_pitch {
     font-family: "PixelifySans", sans-serif;
-    font-size: 32px;
+    font-size: 36px;
+    max-width: 80%;
+    letter-spacing: 4px;
     color: #007eff;
     text-align: center;
+    font-weight: bold;
+    font-stretch: expanded;
 }
 
 .main-parent {
@@ -105,7 +159,7 @@ a {
 }
 .main-child {
     flex: 1;
-    padding: 100px;
+    padding: 2% 7% 7% 7%;
 }
 .active-icon {
     display: none;
