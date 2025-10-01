@@ -43,6 +43,7 @@ p, li {
     font-size: 24px;
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.9vw;
 }
 li {
     padding: 6px 0px;
@@ -93,6 +94,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    position: relative;
 }
 .vertical-content-div {
     display: flex;
@@ -103,7 +105,7 @@ a {
     max-width: 33%;
 }
 .lapikud-logo {
-    width: 25%;
+    width: 70vw;
     height: auto;
     flex-shrink: 0;
 }
